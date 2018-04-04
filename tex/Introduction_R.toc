@@ -1,0 +1,4 @@
+\select@language {magyar} \beamer@endinputifotherversion {3.36pt}
+\select@language {magyar} \beamer@sectionintoc {1}{R basics}{4}{0}{1}
+\select@language {magyar} \beamer@sectionintoc {2}{Interactive graphs}{10}{0}{2}
+\select@language {magyar} \beamer@sectionintoc {3}{Personalized exams with the exams package}{11}{0}{3}

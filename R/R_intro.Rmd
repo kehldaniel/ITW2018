@@ -1,0 +1,60 @@
+---
+title: "My first graph in R (Markdown)"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>. A document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+print('Hello World')
+```
+
+## Some data
+
+R knows a lot of distributions, now let us generate some random midterm scores!
+
+```{r}
+scores <- rnorm(100, 50, 15)
+```
+
+## Including Plots
+
+An R Markdown document is very handy if it comes to standard document formats, lets say you want to publish midterm results (very similar structure but different data). First we draw a histogram of the scores:
+
+```{r hist}
+hist(scores)
+```
+
+Well, the code is fairly simple, but we want to be stylish.
+
+```{r hist2}
+hist(scores,
+     main = "First midterm results",
+     ylab = "", 
+     xlab = "points", 
+     col = "cornflowerblue")
+abline(v = mean(scores),
+       col = "red",
+       lwd = 2)
+text(x = mean(scores), y = 5, 
+     labels = round(mean(scores), 2),
+     col = "red")
+```
+
+Somewhat nicer!
+The aim however was only to introduce you to graphs and Rmd files. You can also hide the code just like here to present top three scores:
+
+```{r top3, echo=FALSE, comment=NA}
+cat(round(tail(sort(scores), 3), 2))
+```
+
+Congratulations, now you know how to create a histogram and a document you can use multiple times!

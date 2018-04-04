@@ -1,0 +1,70 @@
+\mode<presentation>
+\linespread{1.15}
+
+\definecolor{bugyiKek}{rgb}{ 0.0000000,0.5450980,0.8509804}
+\definecolor{bugyiSotetKek}{rgb}{0.0000000,0.4117647,0.6509804}
+\definecolor{bugyiSzurke}{rgb}{0.4980392,0.4980392,0.4980392}
+
+\setbeamercolor{frametitle}{fg=bugyiKek}
+\setbeamercolor{normal text}{fg=bugyiSotetKek}
+\setbeamercolor{itemize item}{fg=bugyiSotetKek}
+\setbeamercolor{itemize subitem}{fg=bugyiSotetKek}
+\setbeamercolor{itemize subsubitem}{fg=bugyiSotetKek}
+
+\setbeamercolor{enumerate item}{fg=bugyiSotetKek}
+\setbeamercolor{enumerate subitem}{fg=bugyiSotetKek}
+\setbeamercolor{enumerate subsubitem}{fg=bugyiSotetKek}
+
+\setbeamercolor{section in toc}{fg=bugyiSotetKek}
+\setbeamercolor{subsection in toc}{fg=bugyiSotetKek}
+\setbeamercolor{subsubsection in toc}{fg=bugyiSotetKek}
+
+\addtolength{\textwidth}{0cm}
+
+\setbeamerfont{block title}{size=\normalsize}
+\setbeamerfont{block body}{size=\normalsize}
+\setbeamerfont{section in toc}{series=\bfseries}
+\setbeamerfont{subsection in toc}{size=\footnotesize}
+
+%\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamertemplate{enumerate}[default]
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{frametitle continuation}{}
+
+%%% FOOTLINE
+
+\setbeamertemplate{footline}{
+	\color{white}\hspace{.3cm}
+	\textbf{\hfill\insertframenumber\, / \insertdocumentendpage}
+	\hspace{.3cm}
+	\vspace{.2cm}
+	}
+	
+%%% NORMAL PAGE %%%	
+	
+\setbeamertemplate{frametitle}{
+	\vspace{.1cm}
+	\ifthenelse{\equal{\insertframesubtitle}{}}
+		{\hspace{-.37cm}\Large\textbf{\insertframetitle}\vspace{0.2cm}}
+		{\hspace{-.37cm}\Large\textbf{\insertframetitle} \\ \vspace{.15cm}
+		 \hspace{-.37cm}\small\insertframesubtitle\vspace{-0.05cm}}\\
+	\vspace{0cm}
+}
+
+%\setbeamertemplate{frame}{
+%	\hspace{-5cm}
+%}
+	
+%%% TITLE PAGE %%%	
+\setbeamertemplate{title page}{
+	\vspace{1.5cm}
+	\parbox{0.815\textwidth}{\flushright\Large\bfseries\textcolor{bugyiKek}{\inserttitle}}\\
+	\vspace{.5cm}
+	\parbox{0.815\textwidth}{\flushright\bfseries\textcolor{bugyiSzurke}{\insertauthor}}\\
+	\parbox{0.815\textwidth}{\flushright\small\textcolor{bugyiSzurke}{\insertinstitute}}\\
+	\parbox{0.815\textwidth}{\flushright\textcolor{bugyiSzurke}{\insertdate}}
+	} 
+\mode
+<all> 
