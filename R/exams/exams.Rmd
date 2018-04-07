@@ -1,0 +1,52 @@
+---
+title: "exams"
+author: "Daniel Kehl"
+date: '2018'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setting up the exams package
+
+As we already know, we have to install the package first (only once) and call it afterwards.
+
+```{r}
+library("exams")
+```
+
+## Built in examples
+
+We have many options as the ouput format of our exam (Blackboard, Moodle, pdf, HTML etc.). We do not want to play around in LMS and creating pdf probably does not work in the lab (but I can show on my computer) so let's just create HTMLs.
+
+
+```{r}
+?exams2html
+
+exams2html(list(
+  "boxplots",
+  c("tstat", "ttest", "confint"),
+  c("regression", "anova"),
+  "scatterplot",
+  "relfreq"
+))
+```
+
+This small code chunk should have created a new tab in your browser with random questions. How is that possible?!?! (Some of the formulas might be hard to read depending on your browser.)
+The questions come from .Rnw (or .Rmd) files located on your computer (something like Documents/R/win-library/version/exams/exercises). For convenience I put the boxplots.Rnw file in the repository. Let's check it! They are basically a mixture of R code and some content!
+
+Let's play a little bit with our own first.Rnw test file!
+
+First, define x and y!
+
+After ready, run (if it does not run, you should fix the working directory, see ?setwd)
+
+```{r}
+exams2html("R/exams/first.Rnw")
+```
+
+Now try to extend the question with a third question!
+
+Congratulations, you are now an exams expert! :)

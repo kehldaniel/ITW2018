@@ -212,51 +212,56 @@
 \end{itemize}
 \end{frame}
 
-\section{Interactive graphs}
+\section{Interactive graphs with Shiny}
 
-\begin{frame}{Interactive graphs}
-\framesubtitle{xx}
-some text
+\begin{frame}{Interactive graphs with Shiny}
+\framesubtitle{Webscraping with Shiny}
+\begin{itemize}
+\item Collect semi-structured or unstructured data from websites
+\begin{itemize}
+\item install shiny, shinydashboard package - app
+\item install rvest package for webscraping
+\item googleVis is already installed
+\end{itemize}
+\item Develope a simple shiny app to visualize the data
+\item Use interactive graph to show the data
+\end{itemize}
 \end{frame}
 
+\begin{frame}{Interactive graphs with Shiny}
+\framesubtitle{Webscraping - download data}
+\begin{itemize}
+\item Scraping data from web - ratebeer.com
+\begin{itemize}
+\item html, body, table, tr, td
+\item load rvest package
+\item rvest::read\_html - download webpage
+\item rvest::html\_table - get tables from webpage
+\item find the right table
+\end{itemize}
+\item data preprocessing
+\end{itemize}
+\end{frame}
 
-\section{Personalized exams with the exams package}
-
-\begin{frame}[allowframebreaks]{Personalized exams}
-\framesubtitle{Statistics related courses -- overview}
+\begin{frame}{Interactive graphs with Shiny}
+\framesubtitle{Webscraping - Shiny, shinydashboard}
 \begin{itemize}
-\item BA in Hungarian
+\item easily create webapps with Shiny
 \begin{itemize}
-\item Valószínűségszámítás és statisztika (Probability and Statistics)
-\begin{itemize}
-\item 400/200 students, 1 lecture 7-8/3-4 computer lab sessions
+\item ui.R - user interface
+\item server.R - server interface for the calculation
+\item app.R - combine ui.R and server.R
 \end{itemize}
-\item Statisztikai modellezés (Statistical Modeling)
+\item shinydashboard
 \begin{itemize}
-\item 100/250 students, 1 lecture 2/4-5 computer lab sessions
-\end{itemize}
-\item \textit{Makrogazdasági adatok stat. el. (Applied Economic Statistics)}
-\begin{itemize}
-\item 30-40 students, 1 lecture
-\end{itemize}
-\item \textit{Statisztikai modellezés R-ben (Statistical Modeling in R)}
-\begin{itemize}
-\item 20-30 students, 1 computer lab session
-\end{itemize}
-\end{itemize}
-\item BA in English
-\begin{itemize}
-\item Probability and Statistics
-\begin{itemize}
-\item 60-70 students, 1 lecture 2 computer lab sessions (autumn)
-\end{itemize}
-\item Business Statistics
-\begin{itemize}
-\item 60-70 students, 1 lecture 2 computer lab sessions (spring)
-\end{itemize}
+\item increased UX - user experience
+\item more options - sidebar, widgets, tabs etc.
 \end{itemize}
 \end{itemize}
 \end{frame}
+
+\section{Personalized midterms with the exams package}
+
 
 \begin{frame}{Personalized exams}
 \framesubtitle{Main challenges in big classes}
@@ -273,7 +278,7 @@ some text
 \end{itemize}
 \item exams at the computer makes cheating easier
 \end{itemize}
-One possible solution is personalized exams with Moodle and R.
+One possible solution is personalized exams (with Moodle) and R.
 \end{frame}
 
 \begin{frame}{Personalized midterms}

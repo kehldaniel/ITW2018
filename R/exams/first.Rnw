@@ -1,0 +1,44 @@
+<<echo=FALSE, results=hide>>=
+
+x 
+y
+
+sumxy <- x + y
+multxy <- x * y
+
+## QUESTION/ANSWER GENERATION
+questions <- character(2)
+solutions <- numeric(2)
+
+questions[1] <- "What is the sum of the above two numbers?"
+solutions[1] <- sumxy
+
+questions[2] <- "Multiply them!"
+solutions[2] <- multxy
+@
+
+\begin{question}
+
+Please do the following tasks! Your two numbers are $\Sexpr{x}$ and $\Sexpr{y}$!
+
+Good luck!
+
+\begin{answerlist}
+\item What is the sum of these numbers?
+\item Multiply them!
+\end{answerlist}
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(solutions)
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{cloze}
+%% \exclozetype{num|num}
+%% \exsolution{\Sexpr{sumxy}|\Sexpr{multxy}}
+%% \exname{My_first_Rnw}
+%% \extol{0.001}
