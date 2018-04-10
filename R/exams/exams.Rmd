@@ -2,7 +2,10 @@
 title: "exams"
 author: "Daniel Kehl"
 date: '2018'
-output: html_document
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -11,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Setting up the exams package
 
-As we already know, we have to install the package first (only once) and call it afterwards.
+As we already know, we have to install the package first (only once) and call it afterwards. Please also install the package calles tth, before calling the exams package.
 
 ```{r}
 library("exams")
@@ -23,8 +26,6 @@ We have many options as the ouput format of our exam (Blackboard, Moodle, pdf, H
 
 
 ```{r}
-?exams2html
-
 exams2html(list(
   "boxplots",
   c("tstat", "ttest", "confint"),
@@ -42,10 +43,6 @@ Let's play a little bit with our own first.Rnw test file!
 First, define x and y!
 
 After ready, run (if it does not run, you should fix the working directory, see ?setwd)
-
-```{r}
-exams2html("R/exams/first.Rnw")
-```
 
 Now try to extend the question with a third question!
 

@@ -30,7 +30,7 @@
 \select@language {magyar} \headcommand {\beamer@framepages {12}{12}}
 \select@language {magyar} \headcommand {\beamer@sectionpages {10}{12}}
 \select@language {magyar} \headcommand {\beamer@subsectionpages {10}{12}}
-\select@language {magyar} \headcommand {\sectionentry {3}{Personalized exams with the exams package}{13}{Personalized exams with the exams package}{0}}
+\select@language {magyar} \headcommand {\sectionentry {3}{Personalized midterms with the exams package}{13}{Personalized midterms with the exams package}{0}}
 \select@language {magyar} \headcommand {\slideentry {3}{0}{1}{13/13}{}{0}}
 \select@language {magyar} \headcommand {\beamer@framepages {13}{13}}
 \select@language {magyar} \headcommand {\slideentry {3}{0}{2}{14/14}{}{0}}
@@ -49,14 +49,8 @@
 \select@language {magyar} \headcommand {\beamer@framepages {20}{20}}
 \select@language {magyar} \headcommand {\slideentry {3}{0}{9}{21/21}{}{0}}
 \select@language {magyar} \headcommand {\beamer@framepages {21}{21}}
-\select@language {magyar} \headcommand {\slideentry {3}{0}{10}{22/22}{}{0}}
-\select@language {magyar} \headcommand {\beamer@framepages {22}{22}}
-\select@language {magyar} \headcommand {\slideentry {3}{0}{11}{23/23}{}{0}}
-\select@language {magyar} \headcommand {\beamer@framepages {23}{23}}
-\select@language {magyar} \headcommand {\slideentry {3}{0}{12}{24/24}{}{0}}
-\select@language {magyar} \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\beamer@partpages {1}{24}}
-\headcommand {\beamer@subsectionpages {13}{24}}
-\headcommand {\beamer@sectionpages {13}{24}}
-\headcommand {\beamer@documentpages {24}}
-\headcommand {\gdef \inserttotalframenumber {24}}
+\headcommand {\beamer@partpages {1}{21}}
+\headcommand {\beamer@subsectionpages {13}{21}}
+\headcommand {\beamer@sectionpages {13}{21}}
+\headcommand {\beamer@documentpages {21}}
+\headcommand {\gdef \inserttotalframenumber {21}}

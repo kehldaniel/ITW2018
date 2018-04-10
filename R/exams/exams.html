@@ -313,15 +313,13 @@ $(document).ready(function () {
 
 <section id="setting-up-the-exams-package" class="level2">
 <h2>Setting up the exams package</h2>
-<p>As we already know, we have to install the package first (only once) and call it afterwards.</p>
+<p>As we already know, we have to install the package first (only once) and call it afterwards. Please also install the package calles tth, before calling the exams package.</p>
 <pre class="r"><code>library(&quot;exams&quot;)</code></pre>
 <pre><code>## Warning: package 'exams' was built under R version 3.4.4</code></pre>
 </section>
 <section id="built-in-examples" class="level2">
 <h2>Built in examples</h2>
 <p>We have many options as the ouput format of our exam (Blackboard, Moodle, pdf, HTML etc.). We do not want to play around in LMS and creating pdf probably does not work in the lab (but I can show on my computer) so let’s just create HTMLs.</p>
-<pre class="r"><code>?exams2html</code></pre>
-<pre><code>## starting httpd help server ... done</code></pre>
 <pre class="r"><code>exams2html(list(
   &quot;boxplots&quot;,
   c(&quot;tstat&quot;, &quot;ttest&quot;, &quot;confint&quot;),
@@ -329,10 +327,14 @@ $(document).ready(function () {
   &quot;scatterplot&quot;,
   &quot;relfreq&quot;
 ))</code></pre>
-<pre><code>## Loading required namespace: tth
-## Loading required namespace: base64enc</code></pre>
+<pre><code>## Loading required namespace: tth</code></pre>
+<pre><code>## Loading required namespace: base64enc</code></pre>
 <p>This small code chunk should have created a new tab in your browser with random questions. How is that possible?!?! (Some of the formulas might be hard to read depending on your browser.) The questions come from .Rnw (or .Rmd) files located on your computer (something like Documents/R/win-library/version/exams/exercises). For convenience I put the boxplots.Rnw file in the repository. Let’s check it! They are basically a mixture of R code and some content!</p>
-<p>Let’s try to make our own first.Rnw test file!</p>
+<p>Let’s play a little bit with our own first.Rnw test file!</p>
+<p>First, define x and y!</p>
+<p>After ready, run (if it does not run, you should fix the working directory, see ?setwd)</p>
+<p>Now try to extend the question with a third question!</p>
+<p>Congratulations, you are now an exams expert! :)</p>
 </section>
 
 
